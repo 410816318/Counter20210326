@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     fun Add(v: View){
         //if(v.id==R.id.btn){
-        if(v == btn){
+        if(v  == btn){
             counter++
         } else{
           counter+=2
