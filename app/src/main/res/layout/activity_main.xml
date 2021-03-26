@@ -23,7 +23,7 @@
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Add"
+
         android:text="加1"
         android:textSize="30sp" />
 
@@ -31,8 +31,15 @@
         android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Add"
+
         android:text="加2"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="歸零"
         android:textSize="30sp" />
 
 </LinearLayout>
