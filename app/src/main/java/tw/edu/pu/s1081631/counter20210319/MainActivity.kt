@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener,View.OnLongClickL
         btn.setOnClickListener(this)
         btn2.setOnClickListener(this)
         btn3.setOnClickListener(this)
+        image.setOnLongClickListener(this)
 
 
         btn4.setOnClickListener(object:View.OnClickListener{
@@ -46,8 +47,14 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener,View.OnLongClickL
     }
 
     override fun onLongClick(v: View?): Boolean {
-        counter+=2
+       if(v==txv){
+           counter+=2
+       }else if(v==image){
+           counter--
+       }
+
         txv.text = counter.toString()
+
         return true
     }
 
